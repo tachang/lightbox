@@ -22,22 +22,47 @@
 <body>
 	<h1>Macy's Hispanic Heritage Month Events for 2015</h1>
 	<h3>Participating Stores</h3>
-	<div class="event">
-
-
-	</div>
 
 	<!-- event template placeholder -->
 	<div id="events-placeholder"></div>
 
-	<!-- event template -->
-	<script type="text/template" id="event-template">
-	  <div class="event">
-	    <p>
-	      <%= month %>, <%= day %> at <%= time %>, <%= storename %> <br> <%= city %> <%= state %> <br> <a href="#"> Learn more... </a>
-	    </p>
-	  </div>
-	</script>
+		<!-- event template -->
+		<script type="text/template" id="event-template">
+		  <div class="event lightbox">
+			<ul>
+				<li>
+					<div class="info">
+						<%= month %>, <%= day %> at <%= time %>, <%= storename %> <br> <%= city %> <%= state %>
+
+			  			<a id="show-panel" href="#"> Learn More...</a>
+
+			  			<div id="lightbox-panel">
+			  			    <h2>Lightbox Panel</h2>
+			  			    <p><%= month %></p>
+			  			    <p align="center"><a id="close-panel" href="#">Close this window</a></p>
+			  			</div>
+
+			  			<div id="lightbox"></div>
+			  		</div>
+
+			  	</li>
+				</ul>
+		  </div>
+
+		</script>
+
+		<a id="show-panel" href="#">Show Panel</a>
+
+		<div id="lightbox-panel">
+		    <h2>Lightbox Panel</h2>
+		    <p>You can add any valid content here.</p>
+		    <p align="center"><a id="close-panel" href="#">Close this window</a></p>
+		</div>
+
+		<div id="lightbox"></div>
+
+		
+
 
 </body>
 </html>
