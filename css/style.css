@@ -14,7 +14,7 @@
 	z-index:1000;
 }
 /* Lightbox panel with some content */
-#lightbox-panel {
+.lightbox-panel {
 	color: black;
 	background-color: lightblue;
 	display:none;
