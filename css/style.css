@@ -1,30 +1,127 @@
-* /Lightbox background */
-#lightbox {
-	color: black;
-	background-color: grey;
-	display:none;
-	background:#000000;
-	opacity:0.9;
-	filter:alpha(opacity=90);
-	position:absolute;
-	top:0px;
-	left:0px;
-	min-width:100%;
-	min-height:100%;
-	z-index:1000;
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	background: url("../img/orangeback.jpg") no-repeat center center;
+	background-size: cover;
+	height: 100vh;
 }
+
+a { 
+	color: rgb(215, 152, 55); 
+} 
+
+h1, h3 {
+	color: white;
+}
+.master-info {
+	color: white;
+	font-size: 20px;
+}
+.left {
+	margin-top: 2%;
+	float: left;
+}
+
+.headline {
+	padding-left: 10%;
+}
+.right {
+	margin-top: 10%;
+	float: right;
+	background-color: rgba(168,5,5,0.5);
+	color: white;
+	border-radius: 1%;
+	padding: 2%;
+	right: 1%;
+	bottom: 3%;
+	text-decoration: none;
+}
+.circle {
+	width: 200px;
+	height: 200px;
+	display: inline;
+	border: solid white 2px;
+	margin-bottom: 2%;
+	margin-left: 5%;
+	border-radius: 50%;
+}
+.first {
+	background: url("../img/omar.jpg") no-repeat center center;
+	background-position: 46% 42%;
+	background-size: 181%;
+}
+.second {
+	background: url("../img/milly.png") no-repeat center center;
+	background-position: 43% 54%;
+	background-size: 149%;
+}
+.third {
+	background: url("../img/mario.jpg") no-repeat top center;
+
+}
+.fourth {
+	background: url("../img/angel.jpg") no-repeat center center;
+	background-position: 44% 19%;
+	background-size: 270%;
+}
+.top, .bottom {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.short-info {
+	border-left: solid black 1px;
+}
+
+.short-info p {
+	font-size: 20px;
+}
+
 /* Lightbox panel with some content */
 .lightbox-panel {
-	color: black;
-	background-color: lightblue;
-	display:none;
-	position:fixed;
-	top:100px;
-	left:50%;
-	margin-left:-200px;
-	width:400px;
-	background:#FFFFFF;
-	padding:10px 15px 10px 15px;
-	border:2px solid #CCCCCC;
-	z-index:1001;
+	color: white;
+	background-color: rgb(226, 26, 44);
+	display: none;
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	margin-left: -200px;
+	width: 400px;
+	padding: 10px 15px 10px 15px;
+	border: 5px solid #CCCCCC;
+	z-index: 1001;
+	text-align: left;
+}
+.lightbox-panel p {
+	font-size: 15px;
+}
+.lightbox-panel h1, h2 {
+	color: white;
+}
+
+.lightbox-details {
+	border: solid black 7px;
+}
+
+.rsvp {
+	padding-top: 10%;
+}
+
+.day {
+	font-size: 50px;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: rgba(0,0,0,0.7);
 }
